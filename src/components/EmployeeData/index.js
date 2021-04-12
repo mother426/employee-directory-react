@@ -29,7 +29,7 @@ const EmployeeData = () => {
       });
     }
 
-    const compareFnc = (a, b) => {
+    const compare = (a, b) => {
       if (developerState.order === "ascend") {
         if (a[heading] === undefined) {
           return 1;
@@ -52,7 +52,7 @@ const EmployeeData = () => {
         }
       }
     };
-    const sortedUsers = developerState.filteredUsers.sort(compareFnc);
+    const sortedUsers = developerState.filteredUsers.sort(compare);
 
     setDeveloperState({
       ...developerState,
