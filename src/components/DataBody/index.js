@@ -14,7 +14,7 @@ const DataBody = () => {
         return formattedDate;
     }
     return (
-        <tbody>
+        <tbody className="mx-auto table">
         {context.developerState.filteredUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (
           context.developerState.filteredUsers.map(({ login, name, picture, phone, email, dob }) => {
             return (
